@@ -23,5 +23,16 @@ public class Servicio {
 		}
 				
 	}
+	public boolean actualizar (Empleado empleado) {
+		try {
+			repo.save(empleado);
+			return true;
+			
+		} catch (Exception e) {
+			return false;
+			
+		}
+				
+	}
 
 }
