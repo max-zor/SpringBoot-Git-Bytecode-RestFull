@@ -48,4 +48,17 @@ public class Servicio {
 		}
 
 	}
+	
+	public Empleado buscarByNombre(String nombre) {
+		
+		return repo.findByNombre(nombre);
+	}
+public Empleado buscarByNombreAndId(String nombre, long id) {
+		
+		return repo.findByNombreAndId(nombre, id);
+	}
+public Empleado buscarByNombreAndCargo(String nombre, String cargo) {
+	
+	return repo.findByNombreAndCargo(nombre, cargo);
+}
 }
